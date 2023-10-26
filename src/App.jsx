@@ -1,8 +1,13 @@
+import { useState } from "react";
+import { useEffect } from "react";
+import { FollowMouse } from "./components/FollowMouse";
+
 function App() {
+  const [mounted, setMounted] = useState(false);
   return (
-    <>
-      <h3>Mouse Follower</h3>
-    </>
+    <main>
+      <FollowMouse />
+    </main>
   );
 }
 
